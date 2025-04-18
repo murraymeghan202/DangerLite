@@ -15,7 +15,9 @@ while true
   if (forward == false and turtle.getFuelLimit() == 0) then
       print("Turtle needs more fuel!)
     else
-      turtle.dig()
+      if (turtle.detect()) then
+        turtle.dig()
+      end
     end
   end
 end
