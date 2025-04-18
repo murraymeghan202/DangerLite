@@ -13,7 +13,7 @@ while true
   for(current_loc, displacement, 1) do
     local forward = turtle.forward()
   if (forward == false and turtle.getFuelLimit() == 0) then
-    turtle.refuel() 
+    turtle.refuel(15) 
   else
       if (turtle.detect()) then
         turtle.dig()
